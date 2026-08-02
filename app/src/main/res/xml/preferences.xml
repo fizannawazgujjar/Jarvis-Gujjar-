@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="voice_settings"
+        android:title="Voice Settings" />
+
+    <PreferenceCategory
+        android:key="theme_settings"
+        android:title="Theme Settings" />
+
+    <PreferenceCategory
+        android:key="ai_settings"
+        android:title="AI Settings" />
+
+    <PreferenceCategory
+        android:key="permissions"
+        android:title="Permissions" />
+</PreferenceScreen>
