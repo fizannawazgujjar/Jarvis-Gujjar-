@@ -1,0 +1,2 @@
+rootProject.name = "JarvisAndroid"
+include(":app")
