@@ -1,4 +1,4 @@
-version: '3.8'
+apiVersion: '3.8'
 services:
   postgres:
     image: postgres:15
@@ -27,10 +27,12 @@ services:
     ports:
       - 8000:8000
   worker:
-    image: python:3.11-slim
-    command: bash -c "pip install -r backend/requirements.txt && celery -A app.celery_app.celery_app worker --loglevel=info"
+    build:
+      context: .
+      dockerfile: backend/worker/Dockerfile
     environment:
       - CELERY_BROKER_URL=redis://redis:6379/0
+      - REDIS_URL=redis://redis:6379/0
     depends_on:
       - redis
       - backend
