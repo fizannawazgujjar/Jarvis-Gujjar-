@@ -1,0 +1,15 @@
+# Updated requirements
+fastapi
+uvicorn[standard]
+sqlmodel
+pydantic
+httpx
+redis
+python-dotenv
+sqlalchemy
+asyncpg
+pytest
+pytest-asyncio
+celery
+pynacl
+jsonschema
